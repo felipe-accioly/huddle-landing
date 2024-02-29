@@ -1,0 +1,72 @@
+body{
+    display: grid;
+    grid-template-areas:
+    "header-container header-container"
+    "hero hero";
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    background: hsl(257, 40%, 49%) url(../images/bg-desktop.svg);
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    align-items: center;
+}
+
+.header-container{
+    grid-area: header-container;
+}
+
+.header-container img{
+    padding: 30px 0 70px 30px;
+}
+
+.hero{
+    grid-area: hero;
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+    gap: 30px;
+}
+
+.hero .mockups{
+    width: 900px;
+}
+
+.hero .mockups img{
+    width: 100%;
+}
+
+.hero .informations{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+}
+
+.hero .informations .title{
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.hero .informations .text{
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.hero .informations .btn{
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+    border: none;
+    border-radius:30px;
+    font-size: 18px;
+    height: 50px;
+    width: 160px;
+    text-align: center;
+    margin-left: 8px;
+}
+
+.hero .social-midia ul{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
